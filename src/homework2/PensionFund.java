@@ -1,6 +1,6 @@
 package homework2;
 
-public class PensionFond {
+public class PensionFund {
     private static final double PENSION_COEFICIENT = 0.02;
     private static final int AVERAGE_SALARY = 1500;
 
@@ -9,7 +9,7 @@ public class PensionFond {
 
     private final String date;
 
-    public PensionFond(String name, boolean isState, String date) {
+    public PensionFund(String name, boolean isState, String date) {
         this.name = name;
         this.isState = isState;
         this.date = date;

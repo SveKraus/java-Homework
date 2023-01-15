@@ -2,15 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9596c198-345b-4bbb-901d-0781ea772c8f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework2/AverageUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework2/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework2/PensionFond.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework2/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homework2/Pensioner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homework2/Worker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework2/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework2/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework2/PensionFond.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework2/PensionFund.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework2/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework2/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +43,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/ACER"
+    "last_opened_file_path": "C:/Users/ACER/IdeaProjects/homework-Java"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -90,7 +87,14 @@
       <option name="project" value="LOCAL" />
       <updated>1672336586337</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Initial commit">
+      <created>1672405210520</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1672405210520</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
