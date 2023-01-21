@@ -10,5 +10,17 @@ public class Main {
 
         System.out.println(statePension);
         System.out.println(notStatePension);
+
+        Worker worker1 = new Worker();
+
+        worker1.setMinSalary(1000);
+        worker1.setMaxSalary(2000);
+        worker1.setAge(50);
+
+        double answer = worker1.calculatePension();
+        System.out.println(worker1 + ", твоя пенсия составит $ : ");
+        System.out.println(answer);
+
+
     }
 }

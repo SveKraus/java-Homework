@@ -1,6 +1,6 @@
 package homework2;
 
-public class Worker extends Person{
+public class Worker extends Person implements AbleToCalculatePension {
 
     private double minSalary;
     private double maxSalary;
@@ -25,5 +25,13 @@ public class Worker extends Person{
 
     public void setMaxSalary(double maxSalary) {
         this.maxSalary = maxSalary;
+    }
+
+    @Override
+    public double calculatePension() {
+        PensionFund pensionFund= new PensionFund("PensionFund Berlin", true, "16.02.87");
+        int age = getAge();
+        double result = pensionFund.calculatePension(age, minSalary, maxSalary);
+        return result;
     }
 }
