@@ -29,7 +29,7 @@ public class Worker extends Person implements AbleToCalculatePension {
 
     @Override
     public double calculatePension() {
-        PensionFund pensionFund= new PensionFund("PensionFund Berlin", true, "16.02.87");
+        PensionFund pensionFund= new PensionFund("PensionFund Berlin", "16.02.87", TypeOfFund.STATE );
         int age = getAge();
         double result = pensionFund.calculatePension(age, minSalary, maxSalary);
         return result;
