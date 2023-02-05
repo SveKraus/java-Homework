@@ -20,8 +20,9 @@ public class Game {
     public void start() {
         Scanner scanner = new Scanner(System.in);
         int points = 0;
+        int n = 10;
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < n; i++) {
             int first = scanner.nextInt();
             int second = scanner.nextInt();
             if (first < length && second < width && first >= 0 && second >= 0) {
