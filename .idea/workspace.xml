@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9596c198-345b-4bbb-901d-0781ea772c8f" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/homework2/Company.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework2/Month.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/homework2/Sex.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework2/Pensioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework2/Pensioner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework2/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework2/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework2/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework2/Worker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homework2/AdditionalTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +14,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -53,7 +49,20 @@
       <recent name="homework2" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.MainMap">
+  <component name="RunManager" selected="Application.AdditionalTask">
+    <configuration name="AdditionalTask" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="homework2.AdditionalTask" />
+      <module name="homework-Java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="homework2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="homework-Java" />
@@ -89,6 +98,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AdditionalTask" />
         <item itemvalue="Application.MainMap" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main" />
@@ -153,7 +163,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675625606600</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Initial commit">
+      <created>1675628064394</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1675628064394</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
