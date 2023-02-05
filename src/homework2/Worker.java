@@ -2,6 +2,8 @@ package homework2;
 
 public class Worker extends Person implements AbleToCalculatePension {
 
+    private static final int MONEY_PER_CHILD = 200;
+
     private double minSalary;
     private double maxSalary;
 
@@ -31,7 +33,14 @@ public class Worker extends Person implements AbleToCalculatePension {
     public double calculatePension() {
         PensionFund pensionFund= new PensionFund("PensionFund Berlin", "16.02.87", TypeOfFund.STATE );
         int age = getAge();
-        double result = pensionFund.calculatePension(age, minSalary, maxSalary);
+
+        int additionalSalary = 0;
+
+        if (getChildren() != null) {
+            additionalSalary = getChildren().size() * MONEY_PER_CHILD;
+        }
+
+        double result = pensionFund.calculatePension(age, minSalary + additionalSalary, maxSalary);
         return result;
     }
 }

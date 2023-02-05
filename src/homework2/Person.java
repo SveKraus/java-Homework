@@ -1,41 +1,64 @@
 package homework2;
 
+import java.util.List;
 import java.util.Objects;
 
 public abstract class Person {
 
-    String name;
+    private String name;
+    private int years;
+    private int height;
+    private double weight;
 
-    private static String Person;
+    private Person mom;
 
-    private int age;
+    private Person dad;
 
-    private int growth;
+    private List<Person> children;
 
-    private float weight;
+    private Sex sex;
 
-    private boolean workable;
+    public Sex getSex() {
+        return sex;
+    }
 
-    public Person(){
+    public void setSex(Sex sex) {
+        this.sex = sex;
+    }
+
+
+
+    public Person() {
 
     }
 
-    public Person(String name, int age, int growth, float weight, boolean workable) {
+    public Person(String name, int years, int height, double weight) {
         this.name = name;
-        this.age = age;
-        this.growth = growth;
+        this.years = years;
+        this.height = height;
         this.weight = weight;
-        this.workable = workable;
     }
 
-    public void infoAboutPerson() {
-        System.out.println(name);
-        System.out.println(age);
-        System.out.println(growth);
-        System.out.println(weight);
-
+    public void getInfo() {
+        System.out.println(name + height + weight + years);
     }
-    abstract void die();
+
+    public void goToWork() {
+        System.out.println("Я иду на работу");
+    }
+
+    public void die() {
+        System.out.println("Непонятно что произошло, но кто-то умер");
+    }
+
+    public void infoAboutChildren() {
+        int counter = 0;
+        System.out.println("У меня " + children.size() + " детей");
+        for (Person child : children) {
+            counter++;
+            System.out.println(counter + ") " + child.name);
+        }
+    }
 
     public String getName() {
         return name;
@@ -45,44 +68,36 @@ public abstract class Person {
         this.name = name;
     }
 
-    public static String getPerson() {
-        return Person;
-    }
-
-    public static void setPerson(String person) {
-        Person = person;
-    }
-
     public int getAge() {
-        return age;
+        return years;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setAge(int years) {
+        this.years = years;
     }
 
-    public int getGrowth() {
-        return growth;
+    public int getHeight() {
+        return height;
     }
 
-    public void setGrowth(int growth) {
-        this.growth = growth;
+    public void setHeight(int height) {
+        this.height = height;
     }
 
-    public float getWeight() {
+    public double getWeight() {
         return weight;
     }
 
-    public void setWeight(float weight) {
+    public void setWeight(double weight) {
         this.weight = weight;
     }
 
-    public boolean isWorkable() {
-        return workable;
+    public List<Person> getChildren() {
+        return children;
     }
 
-    public void setWorkable(boolean workable) {
-        this.workable = workable;
+    public void setChildren(List<Person> children) {
+        this.children = children;
     }
 
     @Override
@@ -92,31 +107,32 @@ public abstract class Person {
 
         Person person = (Person) o;
 
-        if (age != person.age) return false;
-        if (growth != person.growth) return false;
-        if (Float.compare(person.weight, weight) != 0) return false;
-        if (workable != person.workable) return false;
+        if (years != person.years) return false;
+        if (height != person.height) return false;
+        if (Double.compare(person.weight, weight) != 0) return false;
         return Objects.equals(name, person.name);
     }
 
     @Override
     public int hashCode() {
-        int result = name != null ? name.hashCode() : 0;
-        result = 31 * result + age;
-        result = 31 * result + growth;
-        result = 31 * result + (weight != +0.0f ? Float.floatToIntBits(weight) : 0);
-        result = 31 * result + (workable ? 1 : 0);
+        int result;
+        long temp;
+        result = name != null ? name.hashCode() : 0;
+        result = 31 * result + years;
+        result = 31 * result + height;
+        temp = Double.doubleToLongBits(weight);
+        result = 31 * result + (int) (temp ^ (temp >>> 32));
         return result;
     }
 
-    public void work() {
-
-        if (age >= 18 && age <= 70) {
-            System.out.println(name + " может идти на работу");
-        } else {
-            System.out.println(name + " отдыхает дома");
-        }
-
+    @Override
+    public String toString() {
+        return "classes.Person{" +
+                "name='" + name + '\'' +
+                ", years=" + years +
+                ", height=" + height +
+                ", weight=" + weight +
+                '}';
     }
 
 }

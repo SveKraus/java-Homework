@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9596c198-345b-4bbb-901d-0781ea772c8f" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/homework3/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/MainForCity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/MainMap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework3/FieldGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework3/FieldGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/homework3/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework3/Game.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homework2/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homework2/Month.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/homework2/Sex.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework2/Pensioner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework2/Pensioner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework2/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework2/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework2/Worker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/homework2/Worker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +18,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
@@ -146,7 +146,14 @@
       <option name="project" value="LOCAL" />
       <updated>1675027494003</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Initial commit">
+      <created>1675625606600</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1675625606600</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
